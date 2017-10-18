@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44032E441F9804D800A39298 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44032E431F9804D800A39298 /* main.cpp */; };
+		44032E441F9804D800A39298 /* Balanced_Brackets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44032E431F9804D800A39298 /* Balanced_Brackets.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		44032E401F9804D800A39298 /* Balanced Brackets */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Balanced Brackets"; sourceTree = BUILT_PRODUCTS_DIR; };
-		44032E431F9804D800A39298 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		44032E431F9804D800A39298 /* Balanced_Brackets.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Balanced_Brackets.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		44032E421F9804D800A39298 /* Balanced Brackets */ = {
 			isa = PBXGroup;
 			children = (
-				44032E431F9804D800A39298 /* main.cpp */,
+				44032E431F9804D800A39298 /* Balanced_Brackets.cpp */,
 			);
 			path = "Balanced Brackets";
 			sourceTree = "<group>";
@@ -119,7 +119,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44032E441F9804D800A39298 /* main.cpp in Sources */,
+				44032E441F9804D800A39298 /* Balanced_Brackets.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
