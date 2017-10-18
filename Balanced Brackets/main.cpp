@@ -29,26 +29,57 @@
 #include <algorithm>
 #include <unordered_map>
 
+
 using namespace std;
 
 bool is_balanced(string expression) {
+    
+    /*
+     This function works by pushing onto the stack
+     the opposite of the character it reads from the string
+     (which it read character by character). It then checks
+     to see if when popped that there is something on the stack
+     and that it is the same char, if not it returns false.
+     */
+    
     stack <char> s;
-    for(int x = 0; x < expression.size(); x++)  {
-        if(s.top() == NULL)
-            s.push(expression[x]);
-        else if(s.top() == expression[x])
-            s.pop();
-        else
-            s.push(expression[x]);
+    for(char c : expression)   {
+        switch(c)  {
+            case '(': s.push(')');
+                // DEBUG : cout << "PUSHED )" << endl;
+                break;
+            case '{': s.push('}');
+                // DEBUG : cout << "PUSHED }" << endl;
+                break;
+            case '[': s.push(']');
+                // DEBUG : cout << "PUSHED ]" << endl;
+                break;
+            default: if(s.size() == 0 || c != s.top())
+                return false;
+            else   {
+                s.pop();
+                // DEBUG : cout << "POPPED " << c << endl;
+            }
+        }
     }
     
+    //Check if there's anything left
     if(s.size() == 0)
         return true;
     else
         return false;
+    
 }
 
 int main(){
+    
+    /*
+     This function reads a number from standard
+     input for the number of lines, and then reads line by line
+     and checks if the brackets in the lines are equal. Only checks for
+     {, [, (, ), ], }, though more can be added later.
+     */
+    
     int t;
     cin >> t;
     for(int a0 = 0; a0 < t; a0++){
